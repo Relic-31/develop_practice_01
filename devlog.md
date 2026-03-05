@@ -73,8 +73,17 @@
 # dev log 2026-03-05
 
 ## 今日开发内容
+编写了github_todo里面的基本结构
 
 ## 新增内容
+功能：
+- 让git不提交相关文件
+
+文件：
+- .gitignore（主文件夹）
+- __pycache__/（python缓存文件夹）
+- *.pyc（python缓存文件）
+- .DS_Store
 
 ## 修改内容
 删除了之前用于联系的几个txt文件
