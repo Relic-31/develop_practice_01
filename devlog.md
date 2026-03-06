@@ -76,6 +76,7 @@
 编写了github_todo里面的基本结构
 
 ## 新增内容
+### 一
 功能：
 - 让git不提交相关文件
 
@@ -84,6 +85,16 @@
 - __pycache__/（python缓存文件夹）
 - *.pyc（python缓存文件）
 - .DS_Store
+### 二
+功能：
+- Path(__file__) 先获取当前脚本的路径，然后 .with_name("todo.json") 把这个路径中的文件名替换成 todo.json，从而得到同一目录下的 todo.json 文件路径，最后把这个路径对象赋值给 DATA_FILE。
+
+文件：
+- DATA_FILE = Path(__file__).with_name("todo.json")
+
+备注：
+- 这样可以确保无论在哪里运行脚本，都能够找到脚本所在文件夹的json文件。
+
 
 ## 修改内容
 删除了之前用于联系的几个txt文件
@@ -92,5 +103,8 @@
 - hello_again.txt
 
 ## 问题记录
-
+无
 ## 今日总结
+今天学到的编程原则：
+1. 职责单一
+2. 返回类型单一
